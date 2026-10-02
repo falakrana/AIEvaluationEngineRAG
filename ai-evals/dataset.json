@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "type": "direct_fact",
+    "question": "What is Falak Rana's contact information, including email, phone number, and portfolio website?",
+    "expected": "Email is ranafalak18@gmail.com, phone number is 9725556991, and portfolio website is falakrana.in (GitHub: github.com/falakrana)."
+  },
+  {
+    "id": 2,
+    "type": "direct_fact",
+    "question": "What degree is Falak Rana pursuing, at which university, and what is his CGPA?",
+    "expected": "Falak Rana is pursuing a Bachelor of Technology (B. Tech) in Computer Science and Engineering at Parul University (Sep. 2022 – Apr. 2026) in Vadodara, India with a CGPA of 8.34/10."
+  },
+  {
+    "id": 3,
+    "type": "direct_fact",
+    "question": "What is Falak Rana's current job role, company name, and location?",
+    "expected": "Software Developer at JMSCPOS Pvt. Ltd. located in Ahmedabad, India (Aug. 2026 – Present)."
+  },
+  {
+    "id": 4,
+    "type": "experience_lookup",
+    "question": "What are Falak Rana's responsibilities and technical work at JMSCPOS Pvt. Ltd.?",
+    "expected": "Working on ASP.NET Webapis, developing REST APIs and MVC architecture for client-side rendering of a POS application, and managing/optimizing SQL Server databases with complex queries and stored procedures to ensure data integrity."
+  },
+  {
+    "id": 5,
+    "type": "experience_lookup",
+    "question": "What did Falak Rana work on during his internship at Infodesk India Pvt. Ltd.?",
+    "expected": "Built scalable microservices and REST APIs across FastAPI, .NET, and Spring Boot with database management using SQL and MongoDB on AWS infrastructure, and designed/integrated a RAG pipeline for legal and regulatory document inspection (Jan. 2026 – May 2026, Vadodara, India)."
+  },
+  {
+    "id": 6,
+    "type": "experience_lookup",
+    "question": "What was Falak Rana's role and research focus at Parul University from June 2024 to January 2025?",
+    "expected": "AI research intern at Parul University in Vadodara, India, where he conducted research on ML models with a brief focus on architectures like transformers and BERT."
+  },
+  {
+    "id": 7,
+    "type": "project_lookup",
+    "question": "What is the Multimodal RAG project and what technologies were used to build it?",
+    "expected": "A multimodal RAG platform built using Python, FastAPI backend, React frontend, Celery ML worker, ChromaDB vector store, and Qwen2-VL document understanding for PDF/image ingestion. It implements LangChain-based chunking, embedding pipelines, and retrieval-augmented chat workflows for AI search and QA over visual and text documents."
+  },
+  {
+    "id": 8,
+    "type": "project_lookup",
+    "question": "What is Menova and what key features and tech stack does it have?",
+    "expected": "A full-stack restaurant digital menu SaaS and ERP solution built with Python, async FastAPI backend, React dashboard, MongoDB, Clerk, Cloudflare R2, and REST APIs. Features include menu management, brand customization, QR-code generation, table/online ordering with permanent records + TTL-based recent-order tracking, and aggregation pipeline analytics dashboards."
+  },
+  {
+    "id": 9,
+    "type": "project_lookup",
+    "question": "Describe the architecture and key features of the AI CodeReview Bot project.",
+    "expected": "An async AI code review system using Python, FastAPI, Celery, Redis, and RAG. It parses multi-language ZIP archives using tree-sitter, analyzes functions and classes with Groq (Llama 3.1) for bugs, security flaws, and performance issues, and features a four-layer pipeline with OWASP security scanning, cross-file dependency analysis, FAISS vector retrieval, and Redis caching to reduce LLM calls."
+  },
+  {
+    "id": 10,
+    "type": "skill_lookup",
+    "question": "What AI / ML skills, libraries, and APIs are listed in Falak Rana's skills section?",
+    "expected": "NumPy, Pandas, Matplotlib, Scikit-Learn, Supervised/Unsupervised learning, LangChain, LangGraph, RAG applications, Prompt Engineering, Generative AI, Agentic AI, OpenAI API, Google Gemini API, and Vector Search."
+  },
+  {
+    "id": 11,
+    "type": "skill_lookup",
+    "question": "Which programming languages and database technologies does Falak Rana know?",
+    "expected": "Programming languages: Python, JavaScript, TypeScript, Rust, Java, C#, and PHP. Databases: MongoDB, MySQL, PostgreSQL, Redis, and Vector DBs (Chroma, FAISS)."
+  },
+  {
+    "id": 12,
+    "type": "skill_lookup",
+    "question": "What Frontend, DevOps, and Cloud tools are listed on the resume?",
+    "expected": "Frontend: React.js, Next.js, Angular, HTML5, CSS3, Tailwind CSS, Zustand, Redux. DevOps & Tools: Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS CloudWatch, and GitHub Actions."
+  },
+  {
+    "id": 13,
+    "type": "multi_hop_query",
+    "question": "Across his work experience and projects, in which places has Falak Rana implemented RAG (Retrieval-Augmented Generation)?",
+    "expected": "Falak Rana has implemented RAG in: (1) Infodesk India Pvt. Ltd. (RAG pipeline for legal and regulatory document inspection), (2) Multimodal RAG project (ChromaDB, LangChain, Qwen2-VL), and (3) AI CodeReview Bot (FAISS-based context retrieval)."
+  },
+  {
+    "id": 14,
+    "type": "out_of_scope",
+    "question": "Does Falak Rana have experience with Kubernetes, Golang (Go), or Ruby on Rails according to his resume?",
+    "expected": "No, Kubernetes, Golang (Go), and Ruby on Rails are not mentioned anywhere on Falak Rana's resume."
+  },
+  {
+    "id": 15,
+    "type": "edge_case_negative",
+    "question": "Has Falak Rana worked for any company or institution outside of India or completed a Master's degree?",
+    "expected": "No, Falak Rana is an Indian Citizen whose education is a Bachelor of Technology (B. Tech) at Parul University, and all work experiences (JMSCPOS, Infodesk India, Parul University) are located in India (Ahmedabad and Vadodara)."
+  }
+]

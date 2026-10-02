@@ -1,0 +1,33 @@
+# ── Python ────────────────────────────────────────────────────────────────
+/venv
+/my_chroma_db
+.env
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Backend storage (uploaded files + Chroma persistence) ─────────────────
+backend/storage/
+backend/.env
+
+# ── Python virtual environments ───────────────────────────────────────────
+backend/.venv/
+backend/venv/
+
+# ── Frontend ──────────────────────────────────────────────────────────────
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+
+# ── IDEs & OS ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db

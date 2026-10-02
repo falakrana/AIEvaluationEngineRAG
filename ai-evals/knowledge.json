@@ -1,0 +1,46 @@
+[
+  {
+    "topic": "personal_and_contact",
+    "content": "Falak Rana is an Indian Citizen. Contact Email: ranafalak18@gmail.com, Phone: 9725556991, Portfolio Website: falakrana.in, GitHub: github.com/falakrana."
+  },
+  {
+    "topic": "ai_and_ml_skills",
+    "content": "AI / ML Skills: NumPy, Pandas, Matplotlib, Scikit-Learn, Supervised/Unsupervised learning, LangChain, LangGraph, RAG applications, Prompt Engineering, Generative AI, Agentic AI, OpenAI API, Google Gemini API, Vector Search."
+  },
+  {
+    "topic": "programming_and_backend_skills",
+    "content": "Programming Languages: Python, JavaScript, TypeScript, Rust, Java, C#, PHP. Backend Technologies: FastAPI, .NET, Flask, Spring Boot, Node.js, Express.js, REST APIs, JWT authentication."
+  },
+  {
+    "topic": "frontend_databases_and_devops_skills",
+    "content": "Frontend: React.js, Next.js, Angular, HTML5, CSS3, Tailwind CSS, Zustand, Redux. Databases: MongoDB, MySQL, PostgreSQL, Redis, Vector DB (Chroma, FAISS). DevOps & Tools: Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS CloudWatch, Github Actions."
+  },
+  {
+    "topic": "experience_jmscpos",
+    "content": "JMSCPOS Pvt. Ltd. (Aug. 2026 – Present, Ahmedabad, India) - Software Developer: Working on ASP.NET Webapis, developing REST APIs and MVC architecture as client-side rendering of a POS application. Managing and optimizing databases with SQL Server, including writing complex queries and stored procedures, ensuring data integrity."
+  },
+  {
+    "topic": "experience_infodesk",
+    "content": "Infodesk India Pvt. Ltd. (Jan. 2026 – May 2026, Vadodara, India) - Software Developer Intern: Built scalable microservices and REST APIs across FastAPI, .NET, and Spring Boot, with database management using SQL and MongoDB on AWS infrastructure. Designed and integrated a RAG pipeline to power legal and regulatory document inspection."
+  },
+  {
+    "topic": "experience_parul_internship",
+    "content": "Parul University (June 2024 – Jan. 2025, Vadodara, India) - AI research intern: Worked in a team researching ML models with a brief focus on architectures like transformers and BERT."
+  },
+  {
+    "topic": "project_multimodal_rag",
+    "content": "Multimodal RAG Project (Python, FastAPI, React, MultimodalRAG, Qwen2-VL): Built a multimodal RAG platform with a FastAPI backend, React frontend, Celery ML worker, ChromaDB vector store, and Qwen2-VL document understanding for PDF/image ingestion. Implemented LangChain-based chunking, embedding pipelines, and retrieval-augmented chat workflows to enable AI search and question answering over text and visual documents."
+  },
+  {
+    "topic": "project_menova",
+    "content": "Menova Project (Python, FastAPI, MongoDB, React, Clerk, Cloudflare R2, REST API): Founded a full-stack restaurant digital menu SaaS along with ERP solution with an async FastAPI backend and a React dashboard for menu management, brand customization, and QR-code generation for customer-facing menus. Implemented table/online ordering with a MongoDB order system (permanent records + TTL-based recent-order tracking), and analytics dashboards using aggregation pipelines."
+  },
+  {
+    "topic": "project_ai_codereview_bot",
+    "content": "AI CodeReview Bot Project (Python, FastAPI, Celery + Redis, RAG): Built an async AI code review system that parses multi-language ZIP archives using tree-sitter and analyzes functions/classes with Groq (Llama 3.1) for bugs, security flaws, and performance issues. Developed a four-layer pipeline with OWASP security scanning, cross-file dependency analysis, RAG-based context retrieval (FAISS), and Redis caching to reduce redundant LLM calls."
+  },
+  {
+    "topic": "education",
+    "content": "Parul University (Sep. 2022 – Apr. 2026, Vadodara, India): Bachelor of Technology (B. Tech) in Computer Science and Engineering with CGPA 8.34/10. Coursework includes Data Structures, Algorithms, Databases, Operating Systems, Machine Learning."
+  }
+]

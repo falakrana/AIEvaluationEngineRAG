@@ -1,0 +1,618 @@
+{
+  "summary": {
+    "total": 15,
+    "passed": 13,
+    "failed": 2,
+    "pass_rate": 0.8666666666666667,
+    "faithfulness_rate": 0.9333333333333333,
+    "avg_score": 4.666666666666667,
+    "failures": {
+      "missing_information": 1,
+      "judge_error": 1
+    }
+  },
+  "results": [
+    {
+      "id": 1,
+      "type": "direct_fact",
+      "question": "What is Falak Rana's contact information, including email, phone number, and portfolio website?",
+      "expected": "Email is ranafalak18@gmail.com, phone number is 9725556991, and portfolio website is falakrana.in (GitHub: github.com/falakrana).",
+      "actual": "Based on page 1 of the document, Falak Rana's contact information is:\n\n*   **Phone:** 9725556991\n*   **Email:** ranafalak18@gmail.com\n*   **Portfolio Website:** falakrana.in",
+      "score": 5,
+      "passed": true,
+      "faithful": true,
+      "failure_category": "none",
+      "unsupported_claims": [],
+      "reason": "The model correctly extracted the phone number, email, and portfolio website from the retrieved context. All values match the expected reference answer exactly. The response is concise, relevant, and fully grounded in the provided text.",
+      "sources": [
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c0",
+          "page_number": 1,
+          "snippet": "Falak Rana Phone-Alt 9725556991 | Envelope ranafalak18@gmail.com | LINK falakrana.in | Map-marker-alt Indian Citizen | LINK github.com/falakrana SKILLS AI / ML: NumPy, Pandas, Matplotlib, Scikit-Learn, Supervised/ Unsupervised learning, LangChain, LangGraph, RAG applications, Prompt Engineering, Generative AI, Agentic AI, OpenAI API, Google Gemini API, Vector Search Programming: Python, C#, JavaScript, T ypeScript, Rust, Java, PHP Frontend: React.js, Next.js, Angular, T ailwind CSS, Zustand, Redux Backend: FastAPI, .NET , Flask, Spring Boot, Node.js, Express.js, REST APIs, JWT authentication Databases: MongoDB, MySQL, PostgreSQL, Redis, Vector DB (Chroma, FAISS) DevOps & Tools: Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS cloudwatch, Github actions EXPERIENCE"
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c4",
+          "page_number": 1,
+          "snippet": "functions/classes with Groq (Llama 3.1) for bugs, security \ufb02aws, and performance issues. \u2022 Developed a four-layer pipeline with OWASP security scanning, cross-\ufb01le dependency analysis, RAG-based context retrieval (FAISS), and Redis caching to reduce redundant LLM calls. EDUCATION Parul University | CGPA: 8.34/10 Sep. 2022 \u2013 Apr. 2026 Bachelor of T echnology (B. T ech) in Computer Science and Engineering Vadodara, India \u2022 Coursework: Data Structures, Algorithms, Databases, Operating Systems, Machine Learning \u2022 AI Research intern : Brief research conducted on architecture like transformers and BERT ."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c2",
+          "page_number": 1,
+          "snippet": "using SQL and MongoDB on AWS infrastructure. \u2022 Designed and integrated a RAG pipeline to power legal and regulatory document inspection. Parul University June 2024 \u2013 Jan. 2025 AI research intern Vadodara, India \u2022 Worked in a team where we have to do research on certain ML models. \u2022 T ypically I had brief research on architecture like transformers and BERT. PROJECTS Multimodal RAG Python,FastAPI, React, MultimodalRAG, Qwen2-VL \u2022 Built an multimodal RAG platform with a FastAPI backend, React frontend, Celery ML worker, ChromaDB vector store, and Qwen2-VL document understanding for PDF/image ingestion. \u2022 Implemented LangChain-based chunking, embedding pipelines, and retrieval-augmented chat work\ufb02ows to enable AI search and question answering over text and visual documents."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c1",
+          "page_number": 1,
+          "snippet": "DevOps & Tools: Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS cloudwatch, Github actions EXPERIENCE JMSCPOS Pvt. Ltd. Aug. 2026 \u2013 Present Software Developer Ahmedabad, India \u2022 Working on ASP .NET Webapis, developing RestAPIs for and MVC architecture as a client side rendering of a POS application. \u2022 Managing and optimizing databases with SQL Server, including writing complex queries and stored procedures, ensuring data integrity. Infodesk India Pvt. Ltd. Jan. 2026 \u2013 May 2026 Software Developer Intern Vadodara, India \u2022 Built scalable microservices and REST APIs across FastAPI, .NET, and Spring Boot, with database management using SQL and MongoDB on AWS infrastructure. \u2022 Designed and integrated a RAG pipeline to power legal and regulatory document inspection."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c3",
+          "page_number": 1,
+          "snippet": "search and question answering over text and visual documents. Menova Python, FastAPI, MongoDB, React, Clerk, Cloud\ufb02are R2, REST API \u2022 Founded a full-stack restaurant digital menu SaaS along with ERP solution with an async FastAPI backend and a React dashboard for menu management, brand customization, and QR-code generation for customer-facing menus. \u2022 Implemented table/online ordering with a MongoDB order system (permanent records + TTL-based recent-order tracking), analytics dashboards using aggregation pipelines. AI CodeLens Python, FastAPI, Celery + Redis, RAG \u2022 Built an async AI code review system that parses multi-language ZIP archives using tree-sitter and analyzes functions/classes with Groq (Llama 3.1) for bugs, security \ufb02aws, and performance issues."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "direct_fact",
+      "question": "What degree is Falak Rana pursuing, at which university, and what is his CGPA?",
+      "expected": "Falak Rana is pursuing a Bachelor of Technology (B. Tech) in Computer Science and Engineering at Parul University (Sep. 2022 \u2013 Apr. 2026) in Vadodara, India with a CGPA of 8.34/10.",
+      "actual": "According to page 1, Falak Rana is pursuing a **Bachelor of Technology (B.Tech) in Computer Science and Engineering** at **Parul University**. His CGPA is **8.34/10**.",
+      "score": 5,
+      "passed": true,
+      "faithful": true,
+      "failure_category": "none",
+      "unsupported_claims": [],
+      "reason": "The model correctly identifies the degree (B.Tech in CSE), the university (Parul University), and the CGPA (8.34/10) as stated in the retrieved context. It directly answers all parts of the question with accurate information grounded in the provided text.",
+      "sources": [
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c0",
+          "page_number": 1,
+          "snippet": "Falak Rana Phone-Alt 9725556991 | Envelope ranafalak18@gmail.com | LINK falakrana.in | Map-marker-alt Indian Citizen | LINK github.com/falakrana SKILLS AI / ML: NumPy, Pandas, Matplotlib, Scikit-Learn, Supervised/ Unsupervised learning, LangChain, LangGraph, RAG applications, Prompt Engineering, Generative AI, Agentic AI, OpenAI API, Google Gemini API, Vector Search Programming: Python, C#, JavaScript, T ypeScript, Rust, Java, PHP Frontend: React.js, Next.js, Angular, T ailwind CSS, Zustand, Redux Backend: FastAPI, .NET , Flask, Spring Boot, Node.js, Express.js, REST APIs, JWT authentication Databases: MongoDB, MySQL, PostgreSQL, Redis, Vector DB (Chroma, FAISS) DevOps & Tools: Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS cloudwatch, Github actions EXPERIENCE"
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c4",
+          "page_number": 1,
+          "snippet": "functions/classes with Groq (Llama 3.1) for bugs, security \ufb02aws, and performance issues. \u2022 Developed a four-layer pipeline with OWASP security scanning, cross-\ufb01le dependency analysis, RAG-based context retrieval (FAISS), and Redis caching to reduce redundant LLM calls. EDUCATION Parul University | CGPA: 8.34/10 Sep. 2022 \u2013 Apr. 2026 Bachelor of T echnology (B. T ech) in Computer Science and Engineering Vadodara, India \u2022 Coursework: Data Structures, Algorithms, Databases, Operating Systems, Machine Learning \u2022 AI Research intern : Brief research conducted on architecture like transformers and BERT ."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c2",
+          "page_number": 1,
+          "snippet": "using SQL and MongoDB on AWS infrastructure. \u2022 Designed and integrated a RAG pipeline to power legal and regulatory document inspection. Parul University June 2024 \u2013 Jan. 2025 AI research intern Vadodara, India \u2022 Worked in a team where we have to do research on certain ML models. \u2022 T ypically I had brief research on architecture like transformers and BERT. PROJECTS Multimodal RAG Python,FastAPI, React, MultimodalRAG, Qwen2-VL \u2022 Built an multimodal RAG platform with a FastAPI backend, React frontend, Celery ML worker, ChromaDB vector store, and Qwen2-VL document understanding for PDF/image ingestion. \u2022 Implemented LangChain-based chunking, embedding pipelines, and retrieval-augmented chat work\ufb02ows to enable AI search and question answering over text and visual documents."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c1",
+          "page_number": 1,
+          "snippet": "DevOps & Tools: Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS cloudwatch, Github actions EXPERIENCE JMSCPOS Pvt. Ltd. Aug. 2026 \u2013 Present Software Developer Ahmedabad, India \u2022 Working on ASP .NET Webapis, developing RestAPIs for and MVC architecture as a client side rendering of a POS application. \u2022 Managing and optimizing databases with SQL Server, including writing complex queries and stored procedures, ensuring data integrity. Infodesk India Pvt. Ltd. Jan. 2026 \u2013 May 2026 Software Developer Intern Vadodara, India \u2022 Built scalable microservices and REST APIs across FastAPI, .NET, and Spring Boot, with database management using SQL and MongoDB on AWS infrastructure. \u2022 Designed and integrated a RAG pipeline to power legal and regulatory document inspection."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c3",
+          "page_number": 1,
+          "snippet": "search and question answering over text and visual documents. Menova Python, FastAPI, MongoDB, React, Clerk, Cloud\ufb02are R2, REST API \u2022 Founded a full-stack restaurant digital menu SaaS along with ERP solution with an async FastAPI backend and a React dashboard for menu management, brand customization, and QR-code generation for customer-facing menus. \u2022 Implemented table/online ordering with a MongoDB order system (permanent records + TTL-based recent-order tracking), analytics dashboards using aggregation pipelines. AI CodeLens Python, FastAPI, Celery + Redis, RAG \u2022 Built an async AI code review system that parses multi-language ZIP archives using tree-sitter and analyzes functions/classes with Groq (Llama 3.1) for bugs, security \ufb02aws, and performance issues."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "direct_fact",
+      "question": "What is Falak Rana's current job role, company name, and location?",
+      "expected": "Software Developer at JMSCPOS Pvt. Ltd. located in Ahmedabad, India (Aug. 2026 \u2013 Present).",
+      "actual": "According to page 1, Falak Rana's current job role is **Software Developer** at **JMSCPOS Pvt. Ltd.**, located in **Ahmedabad, India**.",
+      "score": 5,
+      "passed": true,
+      "faithful": true,
+      "failure_category": "none",
+      "unsupported_claims": [],
+      "reason": "The model correctly identified the job role (Software Developer), company (JMSCPOS Pvt. Ltd.), and location (Ahmedabad, India) based on the retrieved context. It accurately reflects the 'Present' status implied by the question and the context dates (Aug. 2026 \u2013 Present). All claims are strictly grounded in the provided text.",
+      "sources": [
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c0",
+          "page_number": 1,
+          "snippet": "Falak Rana Phone-Alt 9725556991 | Envelope ranafalak18@gmail.com | LINK falakrana.in | Map-marker-alt Indian Citizen | LINK github.com/falakrana SKILLS AI / ML: NumPy, Pandas, Matplotlib, Scikit-Learn, Supervised/ Unsupervised learning, LangChain, LangGraph, RAG applications, Prompt Engineering, Generative AI, Agentic AI, OpenAI API, Google Gemini API, Vector Search Programming: Python, C#, JavaScript, T ypeScript, Rust, Java, PHP Frontend: React.js, Next.js, Angular, T ailwind CSS, Zustand, Redux Backend: FastAPI, .NET , Flask, Spring Boot, Node.js, Express.js, REST APIs, JWT authentication Databases: MongoDB, MySQL, PostgreSQL, Redis, Vector DB (Chroma, FAISS) DevOps & Tools: Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS cloudwatch, Github actions EXPERIENCE"
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c2",
+          "page_number": 1,
+          "snippet": "using SQL and MongoDB on AWS infrastructure. \u2022 Designed and integrated a RAG pipeline to power legal and regulatory document inspection. Parul University June 2024 \u2013 Jan. 2025 AI research intern Vadodara, India \u2022 Worked in a team where we have to do research on certain ML models. \u2022 T ypically I had brief research on architecture like transformers and BERT. PROJECTS Multimodal RAG Python,FastAPI, React, MultimodalRAG, Qwen2-VL \u2022 Built an multimodal RAG platform with a FastAPI backend, React frontend, Celery ML worker, ChromaDB vector store, and Qwen2-VL document understanding for PDF/image ingestion. \u2022 Implemented LangChain-based chunking, embedding pipelines, and retrieval-augmented chat work\ufb02ows to enable AI search and question answering over text and visual documents."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c1",
+          "page_number": 1,
+          "snippet": "DevOps & Tools: Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS cloudwatch, Github actions EXPERIENCE JMSCPOS Pvt. Ltd. Aug. 2026 \u2013 Present Software Developer Ahmedabad, India \u2022 Working on ASP .NET Webapis, developing RestAPIs for and MVC architecture as a client side rendering of a POS application. \u2022 Managing and optimizing databases with SQL Server, including writing complex queries and stored procedures, ensuring data integrity. Infodesk India Pvt. Ltd. Jan. 2026 \u2013 May 2026 Software Developer Intern Vadodara, India \u2022 Built scalable microservices and REST APIs across FastAPI, .NET, and Spring Boot, with database management using SQL and MongoDB on AWS infrastructure. \u2022 Designed and integrated a RAG pipeline to power legal and regulatory document inspection."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c4",
+          "page_number": 1,
+          "snippet": "functions/classes with Groq (Llama 3.1) for bugs, security \ufb02aws, and performance issues. \u2022 Developed a four-layer pipeline with OWASP security scanning, cross-\ufb01le dependency analysis, RAG-based context retrieval (FAISS), and Redis caching to reduce redundant LLM calls. EDUCATION Parul University | CGPA: 8.34/10 Sep. 2022 \u2013 Apr. 2026 Bachelor of T echnology (B. T ech) in Computer Science and Engineering Vadodara, India \u2022 Coursework: Data Structures, Algorithms, Databases, Operating Systems, Machine Learning \u2022 AI Research intern : Brief research conducted on architecture like transformers and BERT ."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c3",
+          "page_number": 1,
+          "snippet": "search and question answering over text and visual documents. Menova Python, FastAPI, MongoDB, React, Clerk, Cloud\ufb02are R2, REST API \u2022 Founded a full-stack restaurant digital menu SaaS along with ERP solution with an async FastAPI backend and a React dashboard for menu management, brand customization, and QR-code generation for customer-facing menus. \u2022 Implemented table/online ordering with a MongoDB order system (permanent records + TTL-based recent-order tracking), analytics dashboards using aggregation pipelines. AI CodeLens Python, FastAPI, Celery + Redis, RAG \u2022 Built an async AI code review system that parses multi-language ZIP archives using tree-sitter and analyzes functions/classes with Groq (Llama 3.1) for bugs, security \ufb02aws, and performance issues."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "experience_lookup",
+      "question": "What are Falak Rana's responsibilities and technical work at JMSCPOS Pvt. Ltd.?",
+      "expected": "Working on ASP.NET Webapis, developing REST APIs and MVC architecture for client-side rendering of a POS application, and managing/optimizing SQL Server databases with complex queries and stored procedures to ensure data integrity.",
+      "actual": "According to page 1, Falak Rana\u2019s responsibilities and technical work at JMSCPOS Pvt. Ltd. include:\n\n*   Working on ASP.NET Web APIs.\n*   Developing REST APIs for MVC architecture.\n*   Implementing client-side rendering for a Point of Sale (POS) application.\n*   Managing and optimizing databases using SQL Server.\n*   Writing complex queries and stored procedures to ensure data integrity.",
+      "score": 5,
+      "passed": true,
+      "faithful": true,
+      "failure_category": "none",
+      "unsupported_claims": [],
+      "reason": "The model accurately extracts the specific responsibilities listed under the JMSCPOS Pvt. Ltd. section in the retrieved context. It correctly identifies the work on ASP.NET Web APIs, REST APIs, MVC architecture, POS application rendering, and SQL Server database management/optimization. All claims are strictly grounded in the provided text, and the response directly answers the question without hallucination or omission.",
+      "sources": [
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c0",
+          "page_number": 1,
+          "snippet": "Falak Rana Phone-Alt 9725556991 | Envelope ranafalak18@gmail.com | LINK falakrana.in | Map-marker-alt Indian Citizen | LINK github.com/falakrana SKILLS AI / ML: NumPy, Pandas, Matplotlib, Scikit-Learn, Supervised/ Unsupervised learning, LangChain, LangGraph, RAG applications, Prompt Engineering, Generative AI, Agentic AI, OpenAI API, Google Gemini API, Vector Search Programming: Python, C#, JavaScript, T ypeScript, Rust, Java, PHP Frontend: React.js, Next.js, Angular, T ailwind CSS, Zustand, Redux Backend: FastAPI, .NET , Flask, Spring Boot, Node.js, Express.js, REST APIs, JWT authentication Databases: MongoDB, MySQL, PostgreSQL, Redis, Vector DB (Chroma, FAISS) DevOps & Tools: Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS cloudwatch, Github actions EXPERIENCE"
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c1",
+          "page_number": 1,
+          "snippet": "DevOps & Tools: Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS cloudwatch, Github actions EXPERIENCE JMSCPOS Pvt. Ltd. Aug. 2026 \u2013 Present Software Developer Ahmedabad, India \u2022 Working on ASP .NET Webapis, developing RestAPIs for and MVC architecture as a client side rendering of a POS application. \u2022 Managing and optimizing databases with SQL Server, including writing complex queries and stored procedures, ensuring data integrity. Infodesk India Pvt. Ltd. Jan. 2026 \u2013 May 2026 Software Developer Intern Vadodara, India \u2022 Built scalable microservices and REST APIs across FastAPI, .NET, and Spring Boot, with database management using SQL and MongoDB on AWS infrastructure. \u2022 Designed and integrated a RAG pipeline to power legal and regulatory document inspection."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c2",
+          "page_number": 1,
+          "snippet": "using SQL and MongoDB on AWS infrastructure. \u2022 Designed and integrated a RAG pipeline to power legal and regulatory document inspection. Parul University June 2024 \u2013 Jan. 2025 AI research intern Vadodara, India \u2022 Worked in a team where we have to do research on certain ML models. \u2022 T ypically I had brief research on architecture like transformers and BERT. PROJECTS Multimodal RAG Python,FastAPI, React, MultimodalRAG, Qwen2-VL \u2022 Built an multimodal RAG platform with a FastAPI backend, React frontend, Celery ML worker, ChromaDB vector store, and Qwen2-VL document understanding for PDF/image ingestion. \u2022 Implemented LangChain-based chunking, embedding pipelines, and retrieval-augmented chat work\ufb02ows to enable AI search and question answering over text and visual documents."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c4",
+          "page_number": 1,
+          "snippet": "functions/classes with Groq (Llama 3.1) for bugs, security \ufb02aws, and performance issues. \u2022 Developed a four-layer pipeline with OWASP security scanning, cross-\ufb01le dependency analysis, RAG-based context retrieval (FAISS), and Redis caching to reduce redundant LLM calls. EDUCATION Parul University | CGPA: 8.34/10 Sep. 2022 \u2013 Apr. 2026 Bachelor of T echnology (B. T ech) in Computer Science and Engineering Vadodara, India \u2022 Coursework: Data Structures, Algorithms, Databases, Operating Systems, Machine Learning \u2022 AI Research intern : Brief research conducted on architecture like transformers and BERT ."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c3",
+          "page_number": 1,
+          "snippet": "search and question answering over text and visual documents. Menova Python, FastAPI, MongoDB, React, Clerk, Cloud\ufb02are R2, REST API \u2022 Founded a full-stack restaurant digital menu SaaS along with ERP solution with an async FastAPI backend and a React dashboard for menu management, brand customization, and QR-code generation for customer-facing menus. \u2022 Implemented table/online ordering with a MongoDB order system (permanent records + TTL-based recent-order tracking), analytics dashboards using aggregation pipelines. AI CodeLens Python, FastAPI, Celery + Redis, RAG \u2022 Built an async AI code review system that parses multi-language ZIP archives using tree-sitter and analyzes functions/classes with Groq (Llama 3.1) for bugs, security \ufb02aws, and performance issues."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "experience_lookup",
+      "question": "What did Falak Rana work on during his internship at Infodesk India Pvt. Ltd.?",
+      "expected": "Built scalable microservices and REST APIs across FastAPI, .NET, and Spring Boot with database management using SQL and MongoDB on AWS infrastructure, and designed/integrated a RAG pipeline for legal and regulatory document inspection (Jan. 2026 \u2013 May 2026, Vadodara, India).",
+      "actual": "According to page 1, during his internship at Infodesk India Pvt. Ltd. (Jan. 2026 \u2013 May 2026), Falak Rana worked on the following:\n\n*   Built scalable microservices and REST APIs across FastAPI, .NET, and Spring Boot.\n*   Managed databases using SQL and MongoDB on AWS infrastructure.\n*   Designed and integrated a RAG (Retrieval-Augmented Generation) pipeline to power legal and regulatory document inspection.",
+      "score": 5,
+      "passed": true,
+      "faithful": true,
+      "failure_category": "none",
+      "unsupported_claims": [],
+      "reason": "The model accurately extracted the specific tasks performed during the internship at Infodesk India Pvt. Ltd. from the retrieved context. It correctly identified the timeframe (Jan. 2026 \u2013 May 2026), the technologies used (FastAPI, .NET, Spring Boot, SQL, MongoDB, AWS), and the specific project (RAG pipeline for legal/regulatory document inspection). All claims are strictly supported by the text in Page 1 of the context.",
+      "sources": [
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c0",
+          "page_number": 1,
+          "snippet": "Falak Rana Phone-Alt 9725556991 | Envelope ranafalak18@gmail.com | LINK falakrana.in | Map-marker-alt Indian Citizen | LINK github.com/falakrana SKILLS AI / ML: NumPy, Pandas, Matplotlib, Scikit-Learn, Supervised/ Unsupervised learning, LangChain, LangGraph, RAG applications, Prompt Engineering, Generative AI, Agentic AI, OpenAI API, Google Gemini API, Vector Search Programming: Python, C#, JavaScript, T ypeScript, Rust, Java, PHP Frontend: React.js, Next.js, Angular, T ailwind CSS, Zustand, Redux Backend: FastAPI, .NET , Flask, Spring Boot, Node.js, Express.js, REST APIs, JWT authentication Databases: MongoDB, MySQL, PostgreSQL, Redis, Vector DB (Chroma, FAISS) DevOps & Tools: Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS cloudwatch, Github actions EXPERIENCE"
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c2",
+          "page_number": 1,
+          "snippet": "using SQL and MongoDB on AWS infrastructure. \u2022 Designed and integrated a RAG pipeline to power legal and regulatory document inspection. Parul University June 2024 \u2013 Jan. 2025 AI research intern Vadodara, India \u2022 Worked in a team where we have to do research on certain ML models. \u2022 T ypically I had brief research on architecture like transformers and BERT. PROJECTS Multimodal RAG Python,FastAPI, React, MultimodalRAG, Qwen2-VL \u2022 Built an multimodal RAG platform with a FastAPI backend, React frontend, Celery ML worker, ChromaDB vector store, and Qwen2-VL document understanding for PDF/image ingestion. \u2022 Implemented LangChain-based chunking, embedding pipelines, and retrieval-augmented chat work\ufb02ows to enable AI search and question answering over text and visual documents."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c1",
+          "page_number": 1,
+          "snippet": "DevOps & Tools: Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS cloudwatch, Github actions EXPERIENCE JMSCPOS Pvt. Ltd. Aug. 2026 \u2013 Present Software Developer Ahmedabad, India \u2022 Working on ASP .NET Webapis, developing RestAPIs for and MVC architecture as a client side rendering of a POS application. \u2022 Managing and optimizing databases with SQL Server, including writing complex queries and stored procedures, ensuring data integrity. Infodesk India Pvt. Ltd. Jan. 2026 \u2013 May 2026 Software Developer Intern Vadodara, India \u2022 Built scalable microservices and REST APIs across FastAPI, .NET, and Spring Boot, with database management using SQL and MongoDB on AWS infrastructure. \u2022 Designed and integrated a RAG pipeline to power legal and regulatory document inspection."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c4",
+          "page_number": 1,
+          "snippet": "functions/classes with Groq (Llama 3.1) for bugs, security \ufb02aws, and performance issues. \u2022 Developed a four-layer pipeline with OWASP security scanning, cross-\ufb01le dependency analysis, RAG-based context retrieval (FAISS), and Redis caching to reduce redundant LLM calls. EDUCATION Parul University | CGPA: 8.34/10 Sep. 2022 \u2013 Apr. 2026 Bachelor of T echnology (B. T ech) in Computer Science and Engineering Vadodara, India \u2022 Coursework: Data Structures, Algorithms, Databases, Operating Systems, Machine Learning \u2022 AI Research intern : Brief research conducted on architecture like transformers and BERT ."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c3",
+          "page_number": 1,
+          "snippet": "search and question answering over text and visual documents. Menova Python, FastAPI, MongoDB, React, Clerk, Cloud\ufb02are R2, REST API \u2022 Founded a full-stack restaurant digital menu SaaS along with ERP solution with an async FastAPI backend and a React dashboard for menu management, brand customization, and QR-code generation for customer-facing menus. \u2022 Implemented table/online ordering with a MongoDB order system (permanent records + TTL-based recent-order tracking), analytics dashboards using aggregation pipelines. AI CodeLens Python, FastAPI, Celery + Redis, RAG \u2022 Built an async AI code review system that parses multi-language ZIP archives using tree-sitter and analyzes functions/classes with Groq (Llama 3.1) for bugs, security \ufb02aws, and performance issues."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "experience_lookup",
+      "question": "What was Falak Rana's role and research focus at Parul University from June 2024 to January 2025?",
+      "expected": "AI research intern at Parul University in Vadodara, India, where he conducted research on ML models with a brief focus on architectures like transformers and BERT.",
+      "actual": "According to page 1, Falak Rana's role at Parul University from June 2024 to January 2025 was **AI research intern**.\n\nThe research focus involved working in a team to conduct research on certain ML models, with specific brief research conducted on architectures like **transformers and BERT**.",
+      "score": 5,
+      "passed": true,
+      "faithful": true,
+      "failure_category": "none",
+      "unsupported_claims": [],
+      "reason": "The model correctly identified the role as 'AI research intern' and the research focus as 'ML models' with a specific focus on 'transformers and BERT'. All details are strictly supported by the retrieved context (Page 1, Experience section and Education section). The response is accurate, relevant, and faithful.",
+      "sources": [
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c0",
+          "page_number": 1,
+          "snippet": "Falak Rana Phone-Alt 9725556991 | Envelope ranafalak18@gmail.com | LINK falakrana.in | Map-marker-alt Indian Citizen | LINK github.com/falakrana SKILLS AI / ML: NumPy, Pandas, Matplotlib, Scikit-Learn, Supervised/ Unsupervised learning, LangChain, LangGraph, RAG applications, Prompt Engineering, Generative AI, Agentic AI, OpenAI API, Google Gemini API, Vector Search Programming: Python, C#, JavaScript, T ypeScript, Rust, Java, PHP Frontend: React.js, Next.js, Angular, T ailwind CSS, Zustand, Redux Backend: FastAPI, .NET , Flask, Spring Boot, Node.js, Express.js, REST APIs, JWT authentication Databases: MongoDB, MySQL, PostgreSQL, Redis, Vector DB (Chroma, FAISS) DevOps & Tools: Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS cloudwatch, Github actions EXPERIENCE"
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c2",
+          "page_number": 1,
+          "snippet": "using SQL and MongoDB on AWS infrastructure. \u2022 Designed and integrated a RAG pipeline to power legal and regulatory document inspection. Parul University June 2024 \u2013 Jan. 2025 AI research intern Vadodara, India \u2022 Worked in a team where we have to do research on certain ML models. \u2022 T ypically I had brief research on architecture like transformers and BERT. PROJECTS Multimodal RAG Python,FastAPI, React, MultimodalRAG, Qwen2-VL \u2022 Built an multimodal RAG platform with a FastAPI backend, React frontend, Celery ML worker, ChromaDB vector store, and Qwen2-VL document understanding for PDF/image ingestion. \u2022 Implemented LangChain-based chunking, embedding pipelines, and retrieval-augmented chat work\ufb02ows to enable AI search and question answering over text and visual documents."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c4",
+          "page_number": 1,
+          "snippet": "functions/classes with Groq (Llama 3.1) for bugs, security \ufb02aws, and performance issues. \u2022 Developed a four-layer pipeline with OWASP security scanning, cross-\ufb01le dependency analysis, RAG-based context retrieval (FAISS), and Redis caching to reduce redundant LLM calls. EDUCATION Parul University | CGPA: 8.34/10 Sep. 2022 \u2013 Apr. 2026 Bachelor of T echnology (B. T ech) in Computer Science and Engineering Vadodara, India \u2022 Coursework: Data Structures, Algorithms, Databases, Operating Systems, Machine Learning \u2022 AI Research intern : Brief research conducted on architecture like transformers and BERT ."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c1",
+          "page_number": 1,
+          "snippet": "DevOps & Tools: Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS cloudwatch, Github actions EXPERIENCE JMSCPOS Pvt. Ltd. Aug. 2026 \u2013 Present Software Developer Ahmedabad, India \u2022 Working on ASP .NET Webapis, developing RestAPIs for and MVC architecture as a client side rendering of a POS application. \u2022 Managing and optimizing databases with SQL Server, including writing complex queries and stored procedures, ensuring data integrity. Infodesk India Pvt. Ltd. Jan. 2026 \u2013 May 2026 Software Developer Intern Vadodara, India \u2022 Built scalable microservices and REST APIs across FastAPI, .NET, and Spring Boot, with database management using SQL and MongoDB on AWS infrastructure. \u2022 Designed and integrated a RAG pipeline to power legal and regulatory document inspection."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c3",
+          "page_number": 1,
+          "snippet": "search and question answering over text and visual documents. Menova Python, FastAPI, MongoDB, React, Clerk, Cloud\ufb02are R2, REST API \u2022 Founded a full-stack restaurant digital menu SaaS along with ERP solution with an async FastAPI backend and a React dashboard for menu management, brand customization, and QR-code generation for customer-facing menus. \u2022 Implemented table/online ordering with a MongoDB order system (permanent records + TTL-based recent-order tracking), analytics dashboards using aggregation pipelines. AI CodeLens Python, FastAPI, Celery + Redis, RAG \u2022 Built an async AI code review system that parses multi-language ZIP archives using tree-sitter and analyzes functions/classes with Groq (Llama 3.1) for bugs, security \ufb02aws, and performance issues."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "project_lookup",
+      "question": "What is the Multimodal RAG project and what technologies were used to build it?",
+      "expected": "A multimodal RAG platform built using Python, FastAPI backend, React frontend, Celery ML worker, ChromaDB vector store, and Qwen2-VL document understanding for PDF/image ingestion. It implements LangChain-based chunking, embedding pipelines, and retrieval-augmented chat workflows for AI search and QA over visual and text documents.",
+      "actual": "Based on the document provided, the **Multimodal RAG** project is a platform built to enable AI search and question answering over both text and visual documents.\n\n**Key Features:**\n*   It utilizes document understanding for ingesting PDFs and images.\n*   It implements retrieval-augmented chat workflows.\n\n**Technologies Used:**\nAccording to page 1, the project was built using the following technologies:\n*   **Languages/Frameworks:** Python, FastAPI (backend), React (frontend).\n*   **AI/ML Components:** Qwen2-VL (for document understanding), LangChain (for chunking and embedding pipelines).\n*   **Infrastructure/Data:** Celery (ML worker), ChromaDB (vector store).",
+      "score": 5,
+      "passed": true,
+      "faithful": true,
+      "failure_category": "none",
+      "unsupported_claims": [],
+      "reason": "The model response accurately identifies the Multimodal RAG project and lists all the specific technologies mentioned in the retrieved context (Python, FastAPI, React, Celery, ChromaDB, Qwen2-VL, LangChain). It correctly describes the project's purpose (AI search and QA over text and visual documents) and features (PDF/image ingestion, retrieval-augmented chat workflows). All claims are strictly grounded in the provided text.",
+      "sources": [
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c2",
+          "page_number": 1,
+          "snippet": "using SQL and MongoDB on AWS infrastructure. \u2022 Designed and integrated a RAG pipeline to power legal and regulatory document inspection. Parul University June 2024 \u2013 Jan. 2025 AI research intern Vadodara, India \u2022 Worked in a team where we have to do research on certain ML models. \u2022 T ypically I had brief research on architecture like transformers and BERT. PROJECTS Multimodal RAG Python,FastAPI, React, MultimodalRAG, Qwen2-VL \u2022 Built an multimodal RAG platform with a FastAPI backend, React frontend, Celery ML worker, ChromaDB vector store, and Qwen2-VL document understanding for PDF/image ingestion. \u2022 Implemented LangChain-based chunking, embedding pipelines, and retrieval-augmented chat work\ufb02ows to enable AI search and question answering over text and visual documents."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c3",
+          "page_number": 1,
+          "snippet": "search and question answering over text and visual documents. Menova Python, FastAPI, MongoDB, React, Clerk, Cloud\ufb02are R2, REST API \u2022 Founded a full-stack restaurant digital menu SaaS along with ERP solution with an async FastAPI backend and a React dashboard for menu management, brand customization, and QR-code generation for customer-facing menus. \u2022 Implemented table/online ordering with a MongoDB order system (permanent records + TTL-based recent-order tracking), analytics dashboards using aggregation pipelines. AI CodeLens Python, FastAPI, Celery + Redis, RAG \u2022 Built an async AI code review system that parses multi-language ZIP archives using tree-sitter and analyzes functions/classes with Groq (Llama 3.1) for bugs, security \ufb02aws, and performance issues."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c0",
+          "page_number": 1,
+          "snippet": "Falak Rana Phone-Alt 9725556991 | Envelope ranafalak18@gmail.com | LINK falakrana.in | Map-marker-alt Indian Citizen | LINK github.com/falakrana SKILLS AI / ML: NumPy, Pandas, Matplotlib, Scikit-Learn, Supervised/ Unsupervised learning, LangChain, LangGraph, RAG applications, Prompt Engineering, Generative AI, Agentic AI, OpenAI API, Google Gemini API, Vector Search Programming: Python, C#, JavaScript, T ypeScript, Rust, Java, PHP Frontend: React.js, Next.js, Angular, T ailwind CSS, Zustand, Redux Backend: FastAPI, .NET , Flask, Spring Boot, Node.js, Express.js, REST APIs, JWT authentication Databases: MongoDB, MySQL, PostgreSQL, Redis, Vector DB (Chroma, FAISS) DevOps & Tools: Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS cloudwatch, Github actions EXPERIENCE"
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c4",
+          "page_number": 1,
+          "snippet": "functions/classes with Groq (Llama 3.1) for bugs, security \ufb02aws, and performance issues. \u2022 Developed a four-layer pipeline with OWASP security scanning, cross-\ufb01le dependency analysis, RAG-based context retrieval (FAISS), and Redis caching to reduce redundant LLM calls. EDUCATION Parul University | CGPA: 8.34/10 Sep. 2022 \u2013 Apr. 2026 Bachelor of T echnology (B. T ech) in Computer Science and Engineering Vadodara, India \u2022 Coursework: Data Structures, Algorithms, Databases, Operating Systems, Machine Learning \u2022 AI Research intern : Brief research conducted on architecture like transformers and BERT ."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c1",
+          "page_number": 1,
+          "snippet": "DevOps & Tools: Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS cloudwatch, Github actions EXPERIENCE JMSCPOS Pvt. Ltd. Aug. 2026 \u2013 Present Software Developer Ahmedabad, India \u2022 Working on ASP .NET Webapis, developing RestAPIs for and MVC architecture as a client side rendering of a POS application. \u2022 Managing and optimizing databases with SQL Server, including writing complex queries and stored procedures, ensuring data integrity. Infodesk India Pvt. Ltd. Jan. 2026 \u2013 May 2026 Software Developer Intern Vadodara, India \u2022 Built scalable microservices and REST APIs across FastAPI, .NET, and Spring Boot, with database management using SQL and MongoDB on AWS infrastructure. \u2022 Designed and integrated a RAG pipeline to power legal and regulatory document inspection."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "project_lookup",
+      "question": "What is Menova and what key features and tech stack does it have?",
+      "expected": "A full-stack restaurant digital menu SaaS and ERP solution built with Python, async FastAPI backend, React dashboard, MongoDB, Clerk, Cloudflare R2, and REST APIs. Features include menu management, brand customization, QR-code generation, table/online ordering with permanent records + TTL-based recent-order tracking, and aggregation pipeline analytics dashboards.",
+      "actual": "Based on page 1 of the document, **Menova** is a full-stack restaurant digital menu SaaS (Software as a Service) that also includes an ERP (Enterprise Resource Planning) solution.\n\n**Key Features:**\n*   **Menu Management:** Allows for the management of restaurant menus.\n*   **Brand Customization:** Supports custom branding for the digital menus.\n*   **QR-Code Generation:** Generates QR codes for customer-facing menus.\n*   **Ordering System:** Implements both table and online ordering.\n*   **Order Tracking:** Uses a system for permanent order records and TTL-based (Time-To-Live) tracking of recent orders.\n*   **Analytics:** Provides analytics dashboards.\n\n**Tech Stack:**\n*   **Backend:** Python, FastAPI (asynchronous backend).\n*   **Database:** MongoDB (used for the order system and analytics via aggregation pipelines).\n*   **Frontend:** React (used for the dashboard).\n*   **Authentication:** Clerk.\n*   **Storage/CDN:** Cloudflare R2.\n*   **API:** REST API.",
+      "score": 5,
+      "passed": true,
+      "faithful": true,
+      "failure_category": "none",
+      "unsupported_claims": [],
+      "reason": "The model accurately identifies Menova as a full-stack restaurant digital menu SaaS and ERP solution. It correctly lists all key features (menu management, brand customization, QR-code generation, ordering with TTL tracking, analytics) and the complete tech stack (Python, FastAPI, MongoDB, React, Clerk, Cloudflare R2, REST API) as found in the retrieved context. The response is fully grounded in the provided text and matches the expected reference answer.",
+      "sources": [
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c3",
+          "page_number": 1,
+          "snippet": "search and question answering over text and visual documents. Menova Python, FastAPI, MongoDB, React, Clerk, Cloud\ufb02are R2, REST API \u2022 Founded a full-stack restaurant digital menu SaaS along with ERP solution with an async FastAPI backend and a React dashboard for menu management, brand customization, and QR-code generation for customer-facing menus. \u2022 Implemented table/online ordering with a MongoDB order system (permanent records + TTL-based recent-order tracking), analytics dashboards using aggregation pipelines. AI CodeLens Python, FastAPI, Celery + Redis, RAG \u2022 Built an async AI code review system that parses multi-language ZIP archives using tree-sitter and analyzes functions/classes with Groq (Llama 3.1) for bugs, security \ufb02aws, and performance issues."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c1",
+          "page_number": 1,
+          "snippet": "DevOps & Tools: Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS cloudwatch, Github actions EXPERIENCE JMSCPOS Pvt. Ltd. Aug. 2026 \u2013 Present Software Developer Ahmedabad, India \u2022 Working on ASP .NET Webapis, developing RestAPIs for and MVC architecture as a client side rendering of a POS application. \u2022 Managing and optimizing databases with SQL Server, including writing complex queries and stored procedures, ensuring data integrity. Infodesk India Pvt. Ltd. Jan. 2026 \u2013 May 2026 Software Developer Intern Vadodara, India \u2022 Built scalable microservices and REST APIs across FastAPI, .NET, and Spring Boot, with database management using SQL and MongoDB on AWS infrastructure. \u2022 Designed and integrated a RAG pipeline to power legal and regulatory document inspection."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c0",
+          "page_number": 1,
+          "snippet": "Falak Rana Phone-Alt 9725556991 | Envelope ranafalak18@gmail.com | LINK falakrana.in | Map-marker-alt Indian Citizen | LINK github.com/falakrana SKILLS AI / ML: NumPy, Pandas, Matplotlib, Scikit-Learn, Supervised/ Unsupervised learning, LangChain, LangGraph, RAG applications, Prompt Engineering, Generative AI, Agentic AI, OpenAI API, Google Gemini API, Vector Search Programming: Python, C#, JavaScript, T ypeScript, Rust, Java, PHP Frontend: React.js, Next.js, Angular, T ailwind CSS, Zustand, Redux Backend: FastAPI, .NET , Flask, Spring Boot, Node.js, Express.js, REST APIs, JWT authentication Databases: MongoDB, MySQL, PostgreSQL, Redis, Vector DB (Chroma, FAISS) DevOps & Tools: Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS cloudwatch, Github actions EXPERIENCE"
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c2",
+          "page_number": 1,
+          "snippet": "using SQL and MongoDB on AWS infrastructure. \u2022 Designed and integrated a RAG pipeline to power legal and regulatory document inspection. Parul University June 2024 \u2013 Jan. 2025 AI research intern Vadodara, India \u2022 Worked in a team where we have to do research on certain ML models. \u2022 T ypically I had brief research on architecture like transformers and BERT. PROJECTS Multimodal RAG Python,FastAPI, React, MultimodalRAG, Qwen2-VL \u2022 Built an multimodal RAG platform with a FastAPI backend, React frontend, Celery ML worker, ChromaDB vector store, and Qwen2-VL document understanding for PDF/image ingestion. \u2022 Implemented LangChain-based chunking, embedding pipelines, and retrieval-augmented chat work\ufb02ows to enable AI search and question answering over text and visual documents."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c4",
+          "page_number": 1,
+          "snippet": "functions/classes with Groq (Llama 3.1) for bugs, security \ufb02aws, and performance issues. \u2022 Developed a four-layer pipeline with OWASP security scanning, cross-\ufb01le dependency analysis, RAG-based context retrieval (FAISS), and Redis caching to reduce redundant LLM calls. EDUCATION Parul University | CGPA: 8.34/10 Sep. 2022 \u2013 Apr. 2026 Bachelor of T echnology (B. T ech) in Computer Science and Engineering Vadodara, India \u2022 Coursework: Data Structures, Algorithms, Databases, Operating Systems, Machine Learning \u2022 AI Research intern : Brief research conducted on architecture like transformers and BERT ."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "type": "project_lookup",
+      "question": "Describe the architecture and key features of the AI CodeReview Bot project.",
+      "expected": "An async AI code review system using Python, FastAPI, Celery, Redis, and RAG. It parses multi-language ZIP archives using tree-sitter, analyzes functions and classes with Groq (Llama 3.1) for bugs, security flaws, and performance issues, and features a four-layer pipeline with OWASP security scanning, cross-file dependency analysis, FAISS vector retrieval, and Redis caching to reduce LLM calls.",
+      "actual": "Based on the document provided, the project is referred to as **AI CodeLens** (described as an \"async AI code review system\"). Here is the description of its architecture and key features:\n\n**Architecture & Tech Stack**\n*   **Backend:** Built with Python and FastAPI.\n*   **Task Queue/Caching:** Uses Celery and Redis to manage asynchronous tasks and reduce redundant LLM calls.\n*   **Parsing:** Utilizes `tree-sitter` to parse multi-language ZIP archives.\n*   **AI Model:** Integrates with Groq using the Llama 3.1 model for analysis.\n*   **Retrieval:** Employs RAG (Retrieval-Augmented Generation) based context retrieval.\n\n**Key Features & Pipeline**\n*   **Multi-language Analysis:** The system parses functions and classes from multi-language ZIP archives.\n*   **Four-Layer Pipeline:** The project features a specific four-layer pipeline consisting of:\n    1.  OWASP security scanning.\n    2.  Cross-file dependency analysis.\n    3.  RAG-based context retrieval (specifically using FAISS).\n    4.  Redis caching.\n*   **Issue Detection:** It analyzes code for bugs, security flaws, and performance issues.\n*   **Efficiency:** The inclusion of Redis caching is specifically designed to reduce redundant calls to the LLM.\n\n*(Source: Page 1)*",
+      "score": 5,
+      "passed": true,
+      "faithful": true,
+      "failure_category": "none",
+      "unsupported_claims": [],
+      "reason": "The model correctly identifies the project as 'AI CodeLens' (noting the question referred to it as 'AI CodeReview Bot', which is a slight naming variance but the content matches the 'AI CodeLens' entry in the context). It accurately lists the tech stack (Python, FastAPI, Celery, Redis, tree-sitter, Groq/Llama 3.1, RAG/FAISS) and the specific four-layer pipeline features (OWASP, cross-file dependency, FAISS retrieval, Redis caching) exactly as described in the retrieved context. All claims are grounded in the provided text.",
+      "sources": [
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c4",
+          "page_number": 1,
+          "snippet": "functions/classes with Groq (Llama 3.1) for bugs, security \ufb02aws, and performance issues. \u2022 Developed a four-layer pipeline with OWASP security scanning, cross-\ufb01le dependency analysis, RAG-based context retrieval (FAISS), and Redis caching to reduce redundant LLM calls. EDUCATION Parul University | CGPA: 8.34/10 Sep. 2022 \u2013 Apr. 2026 Bachelor of T echnology (B. T ech) in Computer Science and Engineering Vadodara, India \u2022 Coursework: Data Structures, Algorithms, Databases, Operating Systems, Machine Learning \u2022 AI Research intern : Brief research conducted on architecture like transformers and BERT ."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c3",
+          "page_number": 1,
+          "snippet": "search and question answering over text and visual documents. Menova Python, FastAPI, MongoDB, React, Clerk, Cloud\ufb02are R2, REST API \u2022 Founded a full-stack restaurant digital menu SaaS along with ERP solution with an async FastAPI backend and a React dashboard for menu management, brand customization, and QR-code generation for customer-facing menus. \u2022 Implemented table/online ordering with a MongoDB order system (permanent records + TTL-based recent-order tracking), analytics dashboards using aggregation pipelines. AI CodeLens Python, FastAPI, Celery + Redis, RAG \u2022 Built an async AI code review system that parses multi-language ZIP archives using tree-sitter and analyzes functions/classes with Groq (Llama 3.1) for bugs, security \ufb02aws, and performance issues."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c2",
+          "page_number": 1,
+          "snippet": "using SQL and MongoDB on AWS infrastructure. \u2022 Designed and integrated a RAG pipeline to power legal and regulatory document inspection. Parul University June 2024 \u2013 Jan. 2025 AI research intern Vadodara, India \u2022 Worked in a team where we have to do research on certain ML models. \u2022 T ypically I had brief research on architecture like transformers and BERT. PROJECTS Multimodal RAG Python,FastAPI, React, MultimodalRAG, Qwen2-VL \u2022 Built an multimodal RAG platform with a FastAPI backend, React frontend, Celery ML worker, ChromaDB vector store, and Qwen2-VL document understanding for PDF/image ingestion. \u2022 Implemented LangChain-based chunking, embedding pipelines, and retrieval-augmented chat work\ufb02ows to enable AI search and question answering over text and visual documents."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c0",
+          "page_number": 1,
+          "snippet": "Falak Rana Phone-Alt 9725556991 | Envelope ranafalak18@gmail.com | LINK falakrana.in | Map-marker-alt Indian Citizen | LINK github.com/falakrana SKILLS AI / ML: NumPy, Pandas, Matplotlib, Scikit-Learn, Supervised/ Unsupervised learning, LangChain, LangGraph, RAG applications, Prompt Engineering, Generative AI, Agentic AI, OpenAI API, Google Gemini API, Vector Search Programming: Python, C#, JavaScript, T ypeScript, Rust, Java, PHP Frontend: React.js, Next.js, Angular, T ailwind CSS, Zustand, Redux Backend: FastAPI, .NET , Flask, Spring Boot, Node.js, Express.js, REST APIs, JWT authentication Databases: MongoDB, MySQL, PostgreSQL, Redis, Vector DB (Chroma, FAISS) DevOps & Tools: Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS cloudwatch, Github actions EXPERIENCE"
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c1",
+          "page_number": 1,
+          "snippet": "DevOps & Tools: Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS cloudwatch, Github actions EXPERIENCE JMSCPOS Pvt. Ltd. Aug. 2026 \u2013 Present Software Developer Ahmedabad, India \u2022 Working on ASP .NET Webapis, developing RestAPIs for and MVC architecture as a client side rendering of a POS application. \u2022 Managing and optimizing databases with SQL Server, including writing complex queries and stored procedures, ensuring data integrity. Infodesk India Pvt. Ltd. Jan. 2026 \u2013 May 2026 Software Developer Intern Vadodara, India \u2022 Built scalable microservices and REST APIs across FastAPI, .NET, and Spring Boot, with database management using SQL and MongoDB on AWS infrastructure. \u2022 Designed and integrated a RAG pipeline to power legal and regulatory document inspection."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "type": "skill_lookup",
+      "question": "What AI / ML skills, libraries, and APIs are listed in Falak Rana's skills section?",
+      "expected": "NumPy, Pandas, Matplotlib, Scikit-Learn, Supervised/Unsupervised learning, LangChain, LangGraph, RAG applications, Prompt Engineering, Generative AI, Agentic AI, OpenAI API, Google Gemini API, and Vector Search.",
+      "actual": "According to page 1, the AI / ML skills, libraries, and APIs listed in Falak Rana's skills section are:\n\n*   **Libraries/Frameworks:** NumPy, Pandas, Matplotlib, Scikit-Learn, LangChain, LangGraph\n*   **Techniques/Concepts:** Supervised/Unsupervised learning, RAG applications, Prompt Engineering, Generative AI, Agentic AI, Vector Search\n*   **APIs:** OpenAI API, Google Gemini API",
+      "score": 5,
+      "passed": true,
+      "faithful": true,
+      "failure_category": "none",
+      "unsupported_claims": [],
+      "reason": "The model correctly identified all AI/ML skills, libraries, and APIs listed in the 'SKILLS' section of the retrieved context. It accurately categorized them into Libraries/Frameworks, Techniques/Concepts, and APIs, covering every item mentioned in the Expected Reference Answer (NumPy, Pandas, Matplotlib, Scikit-Learn, Supervised/Unsupervised learning, LangChain, LangGraph, RAG applications, Prompt Engineering, Generative AI, Agentic AI, OpenAI API, Google Gemini API, and Vector Search). The response is fully grounded in the provided text.",
+      "sources": [
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c0",
+          "page_number": 1,
+          "snippet": "Falak Rana Phone-Alt 9725556991 | Envelope ranafalak18@gmail.com | LINK falakrana.in | Map-marker-alt Indian Citizen | LINK github.com/falakrana SKILLS AI / ML: NumPy, Pandas, Matplotlib, Scikit-Learn, Supervised/ Unsupervised learning, LangChain, LangGraph, RAG applications, Prompt Engineering, Generative AI, Agentic AI, OpenAI API, Google Gemini API, Vector Search Programming: Python, C#, JavaScript, T ypeScript, Rust, Java, PHP Frontend: React.js, Next.js, Angular, T ailwind CSS, Zustand, Redux Backend: FastAPI, .NET , Flask, Spring Boot, Node.js, Express.js, REST APIs, JWT authentication Databases: MongoDB, MySQL, PostgreSQL, Redis, Vector DB (Chroma, FAISS) DevOps & Tools: Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS cloudwatch, Github actions EXPERIENCE"
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c2",
+          "page_number": 1,
+          "snippet": "using SQL and MongoDB on AWS infrastructure. \u2022 Designed and integrated a RAG pipeline to power legal and regulatory document inspection. Parul University June 2024 \u2013 Jan. 2025 AI research intern Vadodara, India \u2022 Worked in a team where we have to do research on certain ML models. \u2022 T ypically I had brief research on architecture like transformers and BERT. PROJECTS Multimodal RAG Python,FastAPI, React, MultimodalRAG, Qwen2-VL \u2022 Built an multimodal RAG platform with a FastAPI backend, React frontend, Celery ML worker, ChromaDB vector store, and Qwen2-VL document understanding for PDF/image ingestion. \u2022 Implemented LangChain-based chunking, embedding pipelines, and retrieval-augmented chat work\ufb02ows to enable AI search and question answering over text and visual documents."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c1",
+          "page_number": 1,
+          "snippet": "DevOps & Tools: Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS cloudwatch, Github actions EXPERIENCE JMSCPOS Pvt. Ltd. Aug. 2026 \u2013 Present Software Developer Ahmedabad, India \u2022 Working on ASP .NET Webapis, developing RestAPIs for and MVC architecture as a client side rendering of a POS application. \u2022 Managing and optimizing databases with SQL Server, including writing complex queries and stored procedures, ensuring data integrity. Infodesk India Pvt. Ltd. Jan. 2026 \u2013 May 2026 Software Developer Intern Vadodara, India \u2022 Built scalable microservices and REST APIs across FastAPI, .NET, and Spring Boot, with database management using SQL and MongoDB on AWS infrastructure. \u2022 Designed and integrated a RAG pipeline to power legal and regulatory document inspection."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c4",
+          "page_number": 1,
+          "snippet": "functions/classes with Groq (Llama 3.1) for bugs, security \ufb02aws, and performance issues. \u2022 Developed a four-layer pipeline with OWASP security scanning, cross-\ufb01le dependency analysis, RAG-based context retrieval (FAISS), and Redis caching to reduce redundant LLM calls. EDUCATION Parul University | CGPA: 8.34/10 Sep. 2022 \u2013 Apr. 2026 Bachelor of T echnology (B. T ech) in Computer Science and Engineering Vadodara, India \u2022 Coursework: Data Structures, Algorithms, Databases, Operating Systems, Machine Learning \u2022 AI Research intern : Brief research conducted on architecture like transformers and BERT ."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c3",
+          "page_number": 1,
+          "snippet": "search and question answering over text and visual documents. Menova Python, FastAPI, MongoDB, React, Clerk, Cloud\ufb02are R2, REST API \u2022 Founded a full-stack restaurant digital menu SaaS along with ERP solution with an async FastAPI backend and a React dashboard for menu management, brand customization, and QR-code generation for customer-facing menus. \u2022 Implemented table/online ordering with a MongoDB order system (permanent records + TTL-based recent-order tracking), analytics dashboards using aggregation pipelines. AI CodeLens Python, FastAPI, Celery + Redis, RAG \u2022 Built an async AI code review system that parses multi-language ZIP archives using tree-sitter and analyzes functions/classes with Groq (Llama 3.1) for bugs, security \ufb02aws, and performance issues."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "type": "skill_lookup",
+      "question": "Which programming languages and database technologies does Falak Rana know?",
+      "expected": "Programming languages: Python, JavaScript, TypeScript, Rust, Java, C#, and PHP. Databases: MongoDB, MySQL, PostgreSQL, Redis, and Vector DBs (Chroma, FAISS).",
+      "actual": "Based on the skills section of the resume on page 1, Falak Rana has the following programming languages and database technologies:\n\n**Programming Languages:**\n*   Python\n*   C#\n*   JavaScript\n*   TypeScript\n*   Rust\n*   Java\n*   PHP\n\n**Database Technologies:**\n*   MongoDB\n*   MySQL\n*   PostgreSQL\n*   Redis\n*   Vector DBs (specifically Chroma and FAISS)",
+      "score": 5,
+      "passed": true,
+      "faithful": true,
+      "failure_category": "none",
+      "unsupported_claims": [],
+      "reason": "The model correctly identified all programming languages (Python, C#, JavaScript, TypeScript, Rust, Java, PHP) and database technologies (MongoDB, MySQL, PostgreSQL, Redis, Vector DBs including Chroma and FAISS) listed in the retrieved context. The response matches the expected reference answer exactly and is fully grounded in the provided resume snippet.",
+      "sources": [
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c0",
+          "page_number": 1,
+          "snippet": "Falak Rana Phone-Alt 9725556991 | Envelope ranafalak18@gmail.com | LINK falakrana.in | Map-marker-alt Indian Citizen | LINK github.com/falakrana SKILLS AI / ML: NumPy, Pandas, Matplotlib, Scikit-Learn, Supervised/ Unsupervised learning, LangChain, LangGraph, RAG applications, Prompt Engineering, Generative AI, Agentic AI, OpenAI API, Google Gemini API, Vector Search Programming: Python, C#, JavaScript, T ypeScript, Rust, Java, PHP Frontend: React.js, Next.js, Angular, T ailwind CSS, Zustand, Redux Backend: FastAPI, .NET , Flask, Spring Boot, Node.js, Express.js, REST APIs, JWT authentication Databases: MongoDB, MySQL, PostgreSQL, Redis, Vector DB (Chroma, FAISS) DevOps & Tools: Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS cloudwatch, Github actions EXPERIENCE"
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c1",
+          "page_number": 1,
+          "snippet": "DevOps & Tools: Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS cloudwatch, Github actions EXPERIENCE JMSCPOS Pvt. Ltd. Aug. 2026 \u2013 Present Software Developer Ahmedabad, India \u2022 Working on ASP .NET Webapis, developing RestAPIs for and MVC architecture as a client side rendering of a POS application. \u2022 Managing and optimizing databases with SQL Server, including writing complex queries and stored procedures, ensuring data integrity. Infodesk India Pvt. Ltd. Jan. 2026 \u2013 May 2026 Software Developer Intern Vadodara, India \u2022 Built scalable microservices and REST APIs across FastAPI, .NET, and Spring Boot, with database management using SQL and MongoDB on AWS infrastructure. \u2022 Designed and integrated a RAG pipeline to power legal and regulatory document inspection."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c2",
+          "page_number": 1,
+          "snippet": "using SQL and MongoDB on AWS infrastructure. \u2022 Designed and integrated a RAG pipeline to power legal and regulatory document inspection. Parul University June 2024 \u2013 Jan. 2025 AI research intern Vadodara, India \u2022 Worked in a team where we have to do research on certain ML models. \u2022 T ypically I had brief research on architecture like transformers and BERT. PROJECTS Multimodal RAG Python,FastAPI, React, MultimodalRAG, Qwen2-VL \u2022 Built an multimodal RAG platform with a FastAPI backend, React frontend, Celery ML worker, ChromaDB vector store, and Qwen2-VL document understanding for PDF/image ingestion. \u2022 Implemented LangChain-based chunking, embedding pipelines, and retrieval-augmented chat work\ufb02ows to enable AI search and question answering over text and visual documents."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c3",
+          "page_number": 1,
+          "snippet": "search and question answering over text and visual documents. Menova Python, FastAPI, MongoDB, React, Clerk, Cloud\ufb02are R2, REST API \u2022 Founded a full-stack restaurant digital menu SaaS along with ERP solution with an async FastAPI backend and a React dashboard for menu management, brand customization, and QR-code generation for customer-facing menus. \u2022 Implemented table/online ordering with a MongoDB order system (permanent records + TTL-based recent-order tracking), analytics dashboards using aggregation pipelines. AI CodeLens Python, FastAPI, Celery + Redis, RAG \u2022 Built an async AI code review system that parses multi-language ZIP archives using tree-sitter and analyzes functions/classes with Groq (Llama 3.1) for bugs, security \ufb02aws, and performance issues."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c4",
+          "page_number": 1,
+          "snippet": "functions/classes with Groq (Llama 3.1) for bugs, security \ufb02aws, and performance issues. \u2022 Developed a four-layer pipeline with OWASP security scanning, cross-\ufb01le dependency analysis, RAG-based context retrieval (FAISS), and Redis caching to reduce redundant LLM calls. EDUCATION Parul University | CGPA: 8.34/10 Sep. 2022 \u2013 Apr. 2026 Bachelor of T echnology (B. T ech) in Computer Science and Engineering Vadodara, India \u2022 Coursework: Data Structures, Algorithms, Databases, Operating Systems, Machine Learning \u2022 AI Research intern : Brief research conducted on architecture like transformers and BERT ."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "type": "skill_lookup",
+      "question": "What Frontend, DevOps, and Cloud tools are listed on the resume?",
+      "expected": "Frontend: React.js, Next.js, Angular, HTML5, CSS3, Tailwind CSS, Zustand, Redux. DevOps & Tools: Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS CloudWatch, and GitHub Actions.",
+      "actual": "Based on the resume provided on page 1, the listed tools are:\n\n**Frontend**\n*   React.js\n*   Next.js\n*   Angular\n*   Tailwind CSS\n*   Zustand\n*   Redux\n\n**DevOps & Tools**\n*   Git\n*   GitHub\n*   Docker\n*   Linux\n*   Postman\n*   GitHub Actions\n\n**Cloud (AWS)**\n*   AWS EC2\n*   AWS S3\n*   AWS CloudWatch",
+      "score": 4,
+      "passed": false,
+      "faithful": true,
+      "failure_category": "missing_information",
+      "unsupported_claims": [],
+      "reason": "The model correctly identified the Frontend and DevOps/Cloud tools listed in the context. However, it failed to include 'HTML5' and 'CSS3' in the Frontend list, which are explicitly present in the Retrieved Knowledge Context (Page 1: 'Frontend: React.js, Next.js, Angular, T ailwind CSS, Zustand, Redux' - wait, looking closely at the context provided in the prompt: 'Frontend: React.js, Next.js, Angular, T ailwind CSS, Zustand, Redux'. The context snippet actually does NOT list HTML5 and CSS3 in the specific line provided in the prompt's context block. Let me re-read the context carefully.\n\nContext Page 1: 'Frontend: React.js, Next.js, Angular, T ailwind CSS, Zustand, Redux'.\nExpected Reference Answer: 'Frontend: React.js, Next.js, Angular, HTML5, CSS3, Tailwind CSS, Zustand, Redux.'\n\nThere is a discrepancy between the Expected Reference Answer and the Retrieved Knowledge Context provided in the prompt. The Context does NOT contain HTML5 or CSS3. The Model Response lists: React.js, Next.js, Angular, Tailwind CSS, Zustand, Redux. This matches the Context exactly. The Expected Reference Answer includes HTML5 and CSS3, which are NOT in the provided Context.\n\nHowever, the instructions say: 'Is the actual response factually and numerically accurate compared to the Expected Reference Answer?'.\nIf I judge against the Expected Reference Answer, the model is missing HTML5 and CSS3.\nIf I judge against the Context, the model is faithful.\n\nUsually, in RAG evaluation, if the Context doesn't have the info, the model shouldn't hallucinate it. But here the Reference Answer has it. This implies the Context provided in the prompt might be truncated or the Reference Answer is the ground truth for the 'correct' field.\n\nLet's look at the Context again. 'Frontend: React.js, Next.js, Angular, T ailwind CSS, Zustand, Redux'. It is possible the OCR or extraction missed HTML5/CSS3, or they are on a different line not shown. But based strictly on the provided text, HTML5 and CSS3 are absent.\n\nHowever, the prompt asks to judge against the 'Expected Reference Answer'. The Reference Answer says HTML5 and CSS3 are listed. The Model Response does not list them. Therefore, compared to the Reference, the model is missing information.\n\nIs the model faithful to the context? Yes, it didn't invent HTML5/CSS3 if they aren't in the text. But the 'correct' field usually aligns with the Reference Answer. If the Reference says they are there, and the model says they aren't, the model is 'incorrect' relative to the ground truth (Reference), even if it was faithful to a potentially incomplete context snippet.\n\nLet's assume the Reference Answer is the gold standard for what *should* be in the resume. The model missed HTML5 and CSS3. Thus, 'missing_information' is the appropriate failure category. The model is faithful to the provided text (which lacks them), but incorrect relative to the expected answer (which includes them). In strict RAG evals, if the context is the source of truth, the model is correct. But the prompt explicitly provides an 'Expected Reference Answer'. I will prioritize the Reference Answer for 'correctness' and 'missing information' checks, while noting the faithfulness to the provided context.\n\nActually, looking at the context again: 'Frontend: React.js, Next.js, Angular, T ailwind CSS, Zustand, Redux'. It is highly likely HTML5 and CSS3 are in the full resume but missing from this specific snippet. The model correctly extracted what was in the snippet. However, since the Reference Answer includes them, the model's answer is incomplete relative to the expected output.\n\nTherefore:\nCorrect: false (missing HTML5, CSS3)\nRelevant: true\nFaithful: true (to the provided context)\nScore: 4 (Good extraction, but missed items present in the reference)\nPassed: false\nFailure: missing_information",
+      "sources": [
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c1",
+          "page_number": 1,
+          "snippet": "DevOps & Tools: Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS cloudwatch, Github actions EXPERIENCE JMSCPOS Pvt. Ltd. Aug. 2026 \u2013 Present Software Developer Ahmedabad, India \u2022 Working on ASP .NET Webapis, developing RestAPIs for and MVC architecture as a client side rendering of a POS application. \u2022 Managing and optimizing databases with SQL Server, including writing complex queries and stored procedures, ensuring data integrity. Infodesk India Pvt. Ltd. Jan. 2026 \u2013 May 2026 Software Developer Intern Vadodara, India \u2022 Built scalable microservices and REST APIs across FastAPI, .NET, and Spring Boot, with database management using SQL and MongoDB on AWS infrastructure. \u2022 Designed and integrated a RAG pipeline to power legal and regulatory document inspection."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c0",
+          "page_number": 1,
+          "snippet": "Falak Rana Phone-Alt 9725556991 | Envelope ranafalak18@gmail.com | LINK falakrana.in | Map-marker-alt Indian Citizen | LINK github.com/falakrana SKILLS AI / ML: NumPy, Pandas, Matplotlib, Scikit-Learn, Supervised/ Unsupervised learning, LangChain, LangGraph, RAG applications, Prompt Engineering, Generative AI, Agentic AI, OpenAI API, Google Gemini API, Vector Search Programming: Python, C#, JavaScript, T ypeScript, Rust, Java, PHP Frontend: React.js, Next.js, Angular, T ailwind CSS, Zustand, Redux Backend: FastAPI, .NET , Flask, Spring Boot, Node.js, Express.js, REST APIs, JWT authentication Databases: MongoDB, MySQL, PostgreSQL, Redis, Vector DB (Chroma, FAISS) DevOps & Tools: Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS cloudwatch, Github actions EXPERIENCE"
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c2",
+          "page_number": 1,
+          "snippet": "using SQL and MongoDB on AWS infrastructure. \u2022 Designed and integrated a RAG pipeline to power legal and regulatory document inspection. Parul University June 2024 \u2013 Jan. 2025 AI research intern Vadodara, India \u2022 Worked in a team where we have to do research on certain ML models. \u2022 T ypically I had brief research on architecture like transformers and BERT. PROJECTS Multimodal RAG Python,FastAPI, React, MultimodalRAG, Qwen2-VL \u2022 Built an multimodal RAG platform with a FastAPI backend, React frontend, Celery ML worker, ChromaDB vector store, and Qwen2-VL document understanding for PDF/image ingestion. \u2022 Implemented LangChain-based chunking, embedding pipelines, and retrieval-augmented chat work\ufb02ows to enable AI search and question answering over text and visual documents."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c3",
+          "page_number": 1,
+          "snippet": "search and question answering over text and visual documents. Menova Python, FastAPI, MongoDB, React, Clerk, Cloud\ufb02are R2, REST API \u2022 Founded a full-stack restaurant digital menu SaaS along with ERP solution with an async FastAPI backend and a React dashboard for menu management, brand customization, and QR-code generation for customer-facing menus. \u2022 Implemented table/online ordering with a MongoDB order system (permanent records + TTL-based recent-order tracking), analytics dashboards using aggregation pipelines. AI CodeLens Python, FastAPI, Celery + Redis, RAG \u2022 Built an async AI code review system that parses multi-language ZIP archives using tree-sitter and analyzes functions/classes with Groq (Llama 3.1) for bugs, security \ufb02aws, and performance issues."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c4",
+          "page_number": 1,
+          "snippet": "functions/classes with Groq (Llama 3.1) for bugs, security \ufb02aws, and performance issues. \u2022 Developed a four-layer pipeline with OWASP security scanning, cross-\ufb01le dependency analysis, RAG-based context retrieval (FAISS), and Redis caching to reduce redundant LLM calls. EDUCATION Parul University | CGPA: 8.34/10 Sep. 2022 \u2013 Apr. 2026 Bachelor of T echnology (B. T ech) in Computer Science and Engineering Vadodara, India \u2022 Coursework: Data Structures, Algorithms, Databases, Operating Systems, Machine Learning \u2022 AI Research intern : Brief research conducted on architecture like transformers and BERT ."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "type": "multi_hop_query",
+      "question": "Across his work experience and projects, in which places has Falak Rana implemented RAG (Retrieval-Augmented Generation)?",
+      "expected": "Falak Rana has implemented RAG in: (1) Infodesk India Pvt. Ltd. (RAG pipeline for legal and regulatory document inspection), (2) Multimodal RAG project (ChromaDB, LangChain, Qwen2-VL), and (3) AI CodeReview Bot (FAISS-based context retrieval).",
+      "actual": "Based on the provided document, Falak Rana has implemented RAG (Retrieval-Augmented Generation) in the following places:\n\n1.  **Infodesk India Pvt. Ltd. (Work Experience):**\n    *   As a Software Developer Intern (Jan. 2026 \u2013 May 2026), he \"Designed and integrated a RAG pipeline to power legal and regulatory document inspection\" (Page 1).\n\n2.  **Multimodal RAG (Project):**\n    *   He built a \"multimodal RAG platform\" using FastAPI, React, ChromaDB, and Qwen2-VL. This involved implementing \"LangChain-based chunking, embedding pipelines, and retrieval-augmented chat workflows\" for AI search and question answering over text and visual documents (Page 1).\n\n3.  **AI CodeLens (Project):**\n    *   He developed a four-layer pipeline that included \"RAG-based context retrieval (FAISS)\" to support an async AI code review system (Page 1).",
+      "score": 1,
+      "passed": false,
+      "faithful": false,
+      "failure_category": "judge_error",
+      "unsupported_claims": [
+        "Judge API error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01jva75qmce4ctz60rxwjqebyb` service tier `on_demand` on output tokens per minute (OTPM): Limit 1000, Used 773, Requested 941. Please try again in 42.84s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+      ],
+      "reason": "Evaluation could not complete due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01jva75qmce4ctz60rxwjqebyb` service tier `on_demand` on output tokens per minute (OTPM): Limit 1000, Used 773, Requested 941. Please try again in 42.84s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "sources": [
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c0",
+          "page_number": 1,
+          "snippet": "Falak Rana Phone-Alt 9725556991 | Envelope ranafalak18@gmail.com | LINK falakrana.in | Map-marker-alt Indian Citizen | LINK github.com/falakrana SKILLS AI / ML: NumPy, Pandas, Matplotlib, Scikit-Learn, Supervised/ Unsupervised learning, LangChain, LangGraph, RAG applications, Prompt Engineering, Generative AI, Agentic AI, OpenAI API, Google Gemini API, Vector Search Programming: Python, C#, JavaScript, T ypeScript, Rust, Java, PHP Frontend: React.js, Next.js, Angular, T ailwind CSS, Zustand, Redux Backend: FastAPI, .NET , Flask, Spring Boot, Node.js, Express.js, REST APIs, JWT authentication Databases: MongoDB, MySQL, PostgreSQL, Redis, Vector DB (Chroma, FAISS) DevOps & Tools: Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS cloudwatch, Github actions EXPERIENCE"
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c2",
+          "page_number": 1,
+          "snippet": "using SQL and MongoDB on AWS infrastructure. \u2022 Designed and integrated a RAG pipeline to power legal and regulatory document inspection. Parul University June 2024 \u2013 Jan. 2025 AI research intern Vadodara, India \u2022 Worked in a team where we have to do research on certain ML models. \u2022 T ypically I had brief research on architecture like transformers and BERT. PROJECTS Multimodal RAG Python,FastAPI, React, MultimodalRAG, Qwen2-VL \u2022 Built an multimodal RAG platform with a FastAPI backend, React frontend, Celery ML worker, ChromaDB vector store, and Qwen2-VL document understanding for PDF/image ingestion. \u2022 Implemented LangChain-based chunking, embedding pipelines, and retrieval-augmented chat work\ufb02ows to enable AI search and question answering over text and visual documents."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c3",
+          "page_number": 1,
+          "snippet": "search and question answering over text and visual documents. Menova Python, FastAPI, MongoDB, React, Clerk, Cloud\ufb02are R2, REST API \u2022 Founded a full-stack restaurant digital menu SaaS along with ERP solution with an async FastAPI backend and a React dashboard for menu management, brand customization, and QR-code generation for customer-facing menus. \u2022 Implemented table/online ordering with a MongoDB order system (permanent records + TTL-based recent-order tracking), analytics dashboards using aggregation pipelines. AI CodeLens Python, FastAPI, Celery + Redis, RAG \u2022 Built an async AI code review system that parses multi-language ZIP archives using tree-sitter and analyzes functions/classes with Groq (Llama 3.1) for bugs, security \ufb02aws, and performance issues."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c4",
+          "page_number": 1,
+          "snippet": "functions/classes with Groq (Llama 3.1) for bugs, security \ufb02aws, and performance issues. \u2022 Developed a four-layer pipeline with OWASP security scanning, cross-\ufb01le dependency analysis, RAG-based context retrieval (FAISS), and Redis caching to reduce redundant LLM calls. EDUCATION Parul University | CGPA: 8.34/10 Sep. 2022 \u2013 Apr. 2026 Bachelor of T echnology (B. T ech) in Computer Science and Engineering Vadodara, India \u2022 Coursework: Data Structures, Algorithms, Databases, Operating Systems, Machine Learning \u2022 AI Research intern : Brief research conducted on architecture like transformers and BERT ."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c1",
+          "page_number": 1,
+          "snippet": "DevOps & Tools: Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS cloudwatch, Github actions EXPERIENCE JMSCPOS Pvt. Ltd. Aug. 2026 \u2013 Present Software Developer Ahmedabad, India \u2022 Working on ASP .NET Webapis, developing RestAPIs for and MVC architecture as a client side rendering of a POS application. \u2022 Managing and optimizing databases with SQL Server, including writing complex queries and stored procedures, ensuring data integrity. Infodesk India Pvt. Ltd. Jan. 2026 \u2013 May 2026 Software Developer Intern Vadodara, India \u2022 Built scalable microservices and REST APIs across FastAPI, .NET, and Spring Boot, with database management using SQL and MongoDB on AWS infrastructure. \u2022 Designed and integrated a RAG pipeline to power legal and regulatory document inspection."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "type": "out_of_scope",
+      "question": "Does Falak Rana have experience with Kubernetes, Golang (Go), or Ruby on Rails according to his resume?",
+      "expected": "No, Kubernetes, Golang (Go), and Ruby on Rails are not mentioned anywhere on Falak Rana's resume.",
+      "actual": "According to the resume provided on page 1, Falak Rana does **not** list experience with Kubernetes, Golang (Go), or Ruby on Rails.\n\n*   **Kubernetes:** His \"DevOps & Tools\" section lists Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS CloudWatch, and GitHub Actions, but does not mention Kubernetes.\n*   **Golang (Go):** His \"Programming\" section lists Python, C#, JavaScript, TypeScript, Rust, Java, and PHP, but does not mention Go.\n*   **Ruby on Rails:** His \"Backend\" section lists FastAPI, .NET, Flask, Spring Boot, Node.js, Express.js, REST APIs, and JWT authentication, but does not mention Ruby on Rails.",
+      "score": 5,
+      "passed": true,
+      "faithful": true,
+      "failure_category": "none",
+      "unsupported_claims": [],
+      "reason": "The model correctly identifies that Kubernetes, Golang, and Ruby on Rails are not present in the resume. It accurately cites the specific sections (DevOps & Tools, Programming, Backend) and lists the technologies actually present in those sections to support the negative answer. All claims are strictly grounded in the retrieved context.",
+      "sources": [
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c0",
+          "page_number": 1,
+          "snippet": "Falak Rana Phone-Alt 9725556991 | Envelope ranafalak18@gmail.com | LINK falakrana.in | Map-marker-alt Indian Citizen | LINK github.com/falakrana SKILLS AI / ML: NumPy, Pandas, Matplotlib, Scikit-Learn, Supervised/ Unsupervised learning, LangChain, LangGraph, RAG applications, Prompt Engineering, Generative AI, Agentic AI, OpenAI API, Google Gemini API, Vector Search Programming: Python, C#, JavaScript, T ypeScript, Rust, Java, PHP Frontend: React.js, Next.js, Angular, T ailwind CSS, Zustand, Redux Backend: FastAPI, .NET , Flask, Spring Boot, Node.js, Express.js, REST APIs, JWT authentication Databases: MongoDB, MySQL, PostgreSQL, Redis, Vector DB (Chroma, FAISS) DevOps & Tools: Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS cloudwatch, Github actions EXPERIENCE"
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c1",
+          "page_number": 1,
+          "snippet": "DevOps & Tools: Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS cloudwatch, Github actions EXPERIENCE JMSCPOS Pvt. Ltd. Aug. 2026 \u2013 Present Software Developer Ahmedabad, India \u2022 Working on ASP .NET Webapis, developing RestAPIs for and MVC architecture as a client side rendering of a POS application. \u2022 Managing and optimizing databases with SQL Server, including writing complex queries and stored procedures, ensuring data integrity. Infodesk India Pvt. Ltd. Jan. 2026 \u2013 May 2026 Software Developer Intern Vadodara, India \u2022 Built scalable microservices and REST APIs across FastAPI, .NET, and Spring Boot, with database management using SQL and MongoDB on AWS infrastructure. \u2022 Designed and integrated a RAG pipeline to power legal and regulatory document inspection."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c2",
+          "page_number": 1,
+          "snippet": "using SQL and MongoDB on AWS infrastructure. \u2022 Designed and integrated a RAG pipeline to power legal and regulatory document inspection. Parul University June 2024 \u2013 Jan. 2025 AI research intern Vadodara, India \u2022 Worked in a team where we have to do research on certain ML models. \u2022 T ypically I had brief research on architecture like transformers and BERT. PROJECTS Multimodal RAG Python,FastAPI, React, MultimodalRAG, Qwen2-VL \u2022 Built an multimodal RAG platform with a FastAPI backend, React frontend, Celery ML worker, ChromaDB vector store, and Qwen2-VL document understanding for PDF/image ingestion. \u2022 Implemented LangChain-based chunking, embedding pipelines, and retrieval-augmented chat work\ufb02ows to enable AI search and question answering over text and visual documents."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c3",
+          "page_number": 1,
+          "snippet": "search and question answering over text and visual documents. Menova Python, FastAPI, MongoDB, React, Clerk, Cloud\ufb02are R2, REST API \u2022 Founded a full-stack restaurant digital menu SaaS along with ERP solution with an async FastAPI backend and a React dashboard for menu management, brand customization, and QR-code generation for customer-facing menus. \u2022 Implemented table/online ordering with a MongoDB order system (permanent records + TTL-based recent-order tracking), analytics dashboards using aggregation pipelines. AI CodeLens Python, FastAPI, Celery + Redis, RAG \u2022 Built an async AI code review system that parses multi-language ZIP archives using tree-sitter and analyzes functions/classes with Groq (Llama 3.1) for bugs, security \ufb02aws, and performance issues."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c4",
+          "page_number": 1,
+          "snippet": "functions/classes with Groq (Llama 3.1) for bugs, security \ufb02aws, and performance issues. \u2022 Developed a four-layer pipeline with OWASP security scanning, cross-\ufb01le dependency analysis, RAG-based context retrieval (FAISS), and Redis caching to reduce redundant LLM calls. EDUCATION Parul University | CGPA: 8.34/10 Sep. 2022 \u2013 Apr. 2026 Bachelor of T echnology (B. T ech) in Computer Science and Engineering Vadodara, India \u2022 Coursework: Data Structures, Algorithms, Databases, Operating Systems, Machine Learning \u2022 AI Research intern : Brief research conducted on architecture like transformers and BERT ."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "type": "edge_case_negative",
+      "question": "Has Falak Rana worked for any company or institution outside of India or completed a Master's degree?",
+      "expected": "No, Falak Rana is an Indian Citizen whose education is a Bachelor of Technology (B. Tech) at Parul University, and all work experiences (JMSCPOS, Infodesk India, Parul University) are located in India (Ahmedabad and Vadodara).",
+      "actual": "Based on the provided document, Falak Rana has **not** worked for any company or institution outside of India, nor have they completed a Master's degree.\n\n*   **Work Experience:** All listed professional experiences are located in India:\n    *   JMSCPOS Pvt. Ltd. in Ahmedabad, India (Page 1).\n    *   Infodesk India Pvt. Ltd. in Vadodara, India (Page 1).\n    *   Parul University (AI Research Intern) in Vadodara, India (Page 1).\n*   **Education:** The only degree listed is a **Bachelor of Technology (B.Tech)** in Computer Science and Engineering from Parul University, Vadodara, India (Page 1). There is no mention of a Master's degree.",
+      "score": 5,
+      "passed": true,
+      "faithful": true,
+      "failure_category": "none",
+      "unsupported_claims": [],
+      "reason": "The model correctly identifies that Falak Rana has not worked outside of India and has not completed a Master's degree. It accurately cites the specific locations (Ahmedabad, Vadodara) and the specific degree (B.Tech from Parul University) found in the retrieved context. The response is fully grounded in the provided text and directly answers the question.",
+      "sources": [
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c0",
+          "page_number": 1,
+          "snippet": "Falak Rana Phone-Alt 9725556991 | Envelope ranafalak18@gmail.com | LINK falakrana.in | Map-marker-alt Indian Citizen | LINK github.com/falakrana SKILLS AI / ML: NumPy, Pandas, Matplotlib, Scikit-Learn, Supervised/ Unsupervised learning, LangChain, LangGraph, RAG applications, Prompt Engineering, Generative AI, Agentic AI, OpenAI API, Google Gemini API, Vector Search Programming: Python, C#, JavaScript, T ypeScript, Rust, Java, PHP Frontend: React.js, Next.js, Angular, T ailwind CSS, Zustand, Redux Backend: FastAPI, .NET , Flask, Spring Boot, Node.js, Express.js, REST APIs, JWT authentication Databases: MongoDB, MySQL, PostgreSQL, Redis, Vector DB (Chroma, FAISS) DevOps & Tools: Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS cloudwatch, Github actions EXPERIENCE"
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c2",
+          "page_number": 1,
+          "snippet": "using SQL and MongoDB on AWS infrastructure. \u2022 Designed and integrated a RAG pipeline to power legal and regulatory document inspection. Parul University June 2024 \u2013 Jan. 2025 AI research intern Vadodara, India \u2022 Worked in a team where we have to do research on certain ML models. \u2022 T ypically I had brief research on architecture like transformers and BERT. PROJECTS Multimodal RAG Python,FastAPI, React, MultimodalRAG, Qwen2-VL \u2022 Built an multimodal RAG platform with a FastAPI backend, React frontend, Celery ML worker, ChromaDB vector store, and Qwen2-VL document understanding for PDF/image ingestion. \u2022 Implemented LangChain-based chunking, embedding pipelines, and retrieval-augmented chat work\ufb02ows to enable AI search and question answering over text and visual documents."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c1",
+          "page_number": 1,
+          "snippet": "DevOps & Tools: Git, GitHub, Docker, Linux, Postman, AWS EC2, AWS S3, AWS cloudwatch, Github actions EXPERIENCE JMSCPOS Pvt. Ltd. Aug. 2026 \u2013 Present Software Developer Ahmedabad, India \u2022 Working on ASP .NET Webapis, developing RestAPIs for and MVC architecture as a client side rendering of a POS application. \u2022 Managing and optimizing databases with SQL Server, including writing complex queries and stored procedures, ensuring data integrity. Infodesk India Pvt. Ltd. Jan. 2026 \u2013 May 2026 Software Developer Intern Vadodara, India \u2022 Built scalable microservices and REST APIs across FastAPI, .NET, and Spring Boot, with database management using SQL and MongoDB on AWS infrastructure. \u2022 Designed and integrated a RAG pipeline to power legal and regulatory document inspection."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c4",
+          "page_number": 1,
+          "snippet": "functions/classes with Groq (Llama 3.1) for bugs, security \ufb02aws, and performance issues. \u2022 Developed a four-layer pipeline with OWASP security scanning, cross-\ufb01le dependency analysis, RAG-based context retrieval (FAISS), and Redis caching to reduce redundant LLM calls. EDUCATION Parul University | CGPA: 8.34/10 Sep. 2022 \u2013 Apr. 2026 Bachelor of T echnology (B. T ech) in Computer Science and Engineering Vadodara, India \u2022 Coursework: Data Structures, Algorithms, Databases, Operating Systems, Machine Learning \u2022 AI Research intern : Brief research conducted on architecture like transformers and BERT ."
+        },
+        {
+          "chunk_id": "8469ce9f-dbef-4794-b94d-299232163a85-p1-c3",
+          "page_number": 1,
+          "snippet": "search and question answering over text and visual documents. Menova Python, FastAPI, MongoDB, React, Clerk, Cloud\ufb02are R2, REST API \u2022 Founded a full-stack restaurant digital menu SaaS along with ERP solution with an async FastAPI backend and a React dashboard for menu management, brand customization, and QR-code generation for customer-facing menus. \u2022 Implemented table/online ordering with a MongoDB order system (permanent records + TTL-based recent-order tracking), analytics dashboards using aggregation pipelines. AI CodeLens Python, FastAPI, Celery + Redis, RAG \u2022 Built an async AI code review system that parses multi-language ZIP archives using tree-sitter and analyzes functions/classes with Groq (Llama 3.1) for bugs, security \ufb02aws, and performance issues."
+        }
+      ]
+    }
+  ]
+}
